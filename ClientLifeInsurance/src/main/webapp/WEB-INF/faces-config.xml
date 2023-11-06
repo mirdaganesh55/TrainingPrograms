@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config xmlns="http://java.sun.com/xml/ns/javaee" 
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+              xsi:schemaLocation="http://java.sun.com/xml/ns/javaee /WEB-INF/schema/web-facesconfig_2_0.xsd" 
+              version="2.0" metadata-complete="false">
+    <!-- This file must be present with our jar, even if it is empty.  Otherwise, our Java annotations won't get scanned! -->
+
+<managed-bean>
+	<managed-bean-name>ejbImpl</managed-bean-name>
+   <managed-bean-class>com.java.ejb.EjbImpl</managed-bean-class>
+   <managed-bean-scope>request</managed-bean-scope>
+</managed-bean>
+<managed-bean>
+	<managed-bean-name>paginationDao</managed-bean-name>
+    <managed-bean-class>com.java.hib.JsfPaginationBean</managed-bean-class>
+    <managed-bean-scope>request</managed-bean-scope>
+</managed-bean>
+<managed-bean>
+	<managed-bean-name>customer</managed-bean-name>
+    <managed-bean-class>com.java.hib.Customer</managed-bean-class>
+    <managed-bean-scope>request</managed-bean-scope>
+</managed-bean>
+<managed-bean>
+	<managed-bean-name>customerImpl</managed-bean-name>
+    <managed-bean-class>com.java.hib.CustomerDAOImpl</managed-bean-class>
+    <managed-bean-scope>request</managed-bean-scope>
+</managed-bean>
+<managed-bean>
+	<managed-bean-name>customerAuth</managed-bean-name>
+   <managed-bean-class>com.java.hib.CustomerAuthorization</managed-bean-class>
+   <managed-bean-scope>request</managed-bean-scope>
+</managed-bean>
+<managed-bean>
+	<managed-bean-name>customerPolicy</managed-bean-name>
+    <managed-bean-class>com.java.hib.CustomerPolicyDaoImpl</managed-bean-class>
+    <managed-bean-scope>request</managed-bean-scope>
+</managed-bean>
+<managed-bean>
+	<managed-bean-name>policy</managed-bean-name>
+    <managed-bean-class>com.java.hib.CustomerPolicy</managed-bean-class>
+    <managed-bean-scope>request</managed-bean-scope>
+</managed-bean>
+<managed-bean>
+	<managed-bean-name>planImpl</managed-bean-name>
+   <managed-bean-class>com.java.hib.InsurancePlanDAOImpl</managed-bean-class>
+   <managed-bean-scope>request</managed-bean-scope>
+</managed-bean>
+</faces-config>
