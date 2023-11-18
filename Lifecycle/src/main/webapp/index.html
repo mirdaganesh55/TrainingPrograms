@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File Upload and Download Example</title>
+</head>
+<body>
+    <h2>File Upload</h2>
+    <form action="FileUploadServlet" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <input type="submit" value="Upload">
+    </form>
+
+    <hr>
+
+    <h2>File Download</h2>
+    <form action="FileDownloadServlet" method="get">
+        <label for="fileName">Enter Filename for Download:</label>
+        <input type="text" name="fileName" required>
+        <input type="submit" value="Download">
+    </form>
+</body>
+</html>

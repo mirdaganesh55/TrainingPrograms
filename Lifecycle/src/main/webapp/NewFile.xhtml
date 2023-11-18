@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<head>
+    <title>JSF Lifecycle Example</title>
+</head>
+<body>
+    <h2>JSF Lifecycle Example</h2>
+
+    <h:outputText value="JSF Initialization Phase" rendered="#{lifecycleBean.initialized}" />
+    <h:outputText value="JSF Apply Request Values Phase" rendered="#{lifecycleBean.applyRequestValues}" />
+    <h:outputText value="JSF Process Validations Phase" rendered="#{lifecycleBean.processValidations}" />
+    <h:outputText value="JSF Update Model Values Phase" rendered="#{lifecycleBean.updateModelValues}" />
+    <h:outputText value="JSF Invoke Application Phase" rendered="#{lifecycleBean.invokeApplication}" />
+    <h:outputText value="JSF Render Response Phase" rendered="#{lifecycleBean.renderResponse}" />
+
+    <br/><br/>
+
+    <h:commandButton value="Simulate Lifecycle" action="#{lifecycleBean.simulateLifecycle}" />
+
+</body>
+</html>
